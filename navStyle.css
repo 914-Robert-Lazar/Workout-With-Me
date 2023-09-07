@@ -1,0 +1,39 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(245, 121, 20);
+}
+
+.navigation-bar {
+    list-style-type: none;
+    margin-top: 110px;
+    margin-right: 30px;
+}
+
+.navigation-bar li {
+    padding: 5px;
+    font-size: large;
+    border-color:black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: -10px 10px 5px 0px;
+    text-align: center;
+    background-image: url(orange-to-black.jpg);
+}
+
+.navigation-bar li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.navigation-bar li a:link, a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.navigation-bar li a:hover, a:active {
+    color:aquamarine;
+    text-decoration: none;
+}
