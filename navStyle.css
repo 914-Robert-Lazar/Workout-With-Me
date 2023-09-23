@@ -16,12 +16,10 @@ nav {
 .navigation-bar li {
     padding: 5px;
     font-size: large;
-    border-color:black;
-    border-width: 2px;
-    border-style: solid;
+    border: 2px solid black;
     box-shadow: -10px 10px 5px 0px;
     text-align: center;
-    background-image: url(orange-to-black.jpg);
+    background-image: url(pictures/orange-to-black.jpg);
 }
 
 .navigation-bar li:not(:last-child) {
@@ -36,4 +34,39 @@ nav {
 .navigation-bar li a:hover, a:active {
     color:aquamarine;
     text-decoration: none;
+}
+
+.tutorial-sub-menu {
+    display: none;
+    transform: translate(104.5%, -10.5%);
+}
+
+.tutorial:hover .tutorial-sub-menu {
+    display: block;
+    float: right;
+}
+
+.tutorial-sub-menu ul {
+    list-style-type: none;
+    border: 2px solid black;
+    box-shadow: 0px 5px 3px 0px;
+    text-align: center;
+    background-image: url(pictures/orange-to-black.jpg);
+    margin: -10%;
+    margin-left: 0;
+    padding: 0;
+}
+
+.tutorial-sub-menu li {
+    margin: 5%;
+    box-shadow: -5px 5px 3px 0px;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 234, 112);
+}
+
+main {
+    margin-left: 20%;
 }

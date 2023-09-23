@@ -5,18 +5,6 @@ h1 {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-}
-
-main {
-    margin-left: 20%;
-}
-
-.page1 {
-    background-color: rgb(255, 234, 112);
-}
-
 .page1 img {
     width: 100%;
 }
@@ -63,18 +51,61 @@ button:hover {
 
 .difficultyGrid {
     display: grid;
-    grid-template-columns: 31% 31% 31%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: 100vh;
+    column-gap: 1%;
+}
+
+.grid-column-content {
+    max-height: 57%;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.grid-column-content:hover {
+    cursor: pointer;
+}
+
+.difficultyGrid img {
+    width: 100%;
+}
+
+.difficultyGrid a:active, a:link {
+    text-decoration: none;
+    color: black;
+}
+.difficultyGrid h2 {
+    text-align: center;
+    border-color: brown;
+    border-style: solid;
+    padding: 3%;
+    margin-top: 0;
+    box-shadow: 5px 5px 5px;
+    background-image: url(pictures/orange-to-black2.png);
+}
+
+.difficultyGrid h2:hover {
+    cursor: pointer;
+}
+
+.difficultyGrid li {
+    padding: 2%;
+    font-size: 150%;
 }
 
 .beginner {
     grid-column: 1;
+    border: 3px solid brown;
+    background-color: rgb(238, 181, 24);
 }
 
 .intermediate {
     grid-column: 2;
+    border: 3px solid brown;
+    background-color: rgb(238, 181, 24);
 }
 
 .advanced {
     grid-column: 3;
+    border: 3px solid brown;
+    background-color: rgb(238, 181, 24);
 }

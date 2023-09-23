@@ -6,23 +6,12 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="menuStyle.css">
         <link rel="stylesheet" href="navStyle.css">
+        <script src="navigation-loader.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Workout with me</title>
     </head>
     <body>
-        <nav id="nav-placeholder">
-            <ul class="navigation-bar">
-                <li>
-                    <a href="menu.html">HOME</a>
-                </li>
-                <li>
-                    <a href="trainingLog.html">TRAINING LOG</a>
-                </li>
-                <li>
-                    <a href="#">TUTORIALS</a>
-                </li>
-            </ul>
-        </nav>
+        <div include-html="nav.html"></div>
         <main>
             <div class="page1">
                 <img src="pictures/planche-for-top.webp" alt="Top Picture">
@@ -31,21 +20,55 @@
                     <h2>Welcome to Workout with me!</h2>
                     <p>Here you can learn how to start working out by a hybrid approach with calisthenics and weights.</p>
                     <div class="button">
-                        <button>GET STARTED</button>
+                        <button onclick="window.location.href='#page2';">GET STARTED</button>
                     </div>
                 </div>
             </div>
-            <div class="difficultyGrid">
+            <div id="page2" class="difficultyGrid">
                 <div class="beginner">
-                    <img src="pictures/bodyrows.png" alt="Beginner">
+                    <a href="beginner.html">
+                        <div class="grid-column-content">
+                            <img src="pictures/bodyrows.png" alt="Beginner">
+                        </div>
+                        <h2>Beginner</h2>
+                    </a>
+                    <ul>
+                        <li>How to start exercising</li>
+                        <li>Basic movement patterns with beginner exercises</li>
+                        <li>Basic workout programs</li>
+                        <li>Recording the process</li>
+                    </ul>
                 </div>
                 <div class="intermediate">
-                    <img src="pictures/pull-ups.png" alt="Intermediate">
+                    <a href="intermediate.html">
+                        <div class="grid-column-content">
+                            <img src="pictures/pull-ups.png" alt="Intermediate">
+                        </div>
+                        <h2>Intermediate</h2>
+                    </a>
+                    <ul>
+                        <li>Setting up goals</li>
+                        <li>Mastering base exercises</li>
+                        <li>Minimal equipment exercises</li>
+                        <li>How to make working out sustainable</li>
+                    </ul>
                 </div>
                 <div class="advanced">
-                    <img src="pictures/archer-pull-ups.png" alt="Advanced">
+                    <a href="advanced.html">    
+                        <div class="grid-column-content">
+                            <img src="pictures/archer-pull-ups.png" alt="Advanced">
+                        </div>
+                        <h2>Advanced</h2>
+                    </a>
+                    <ul>
+                        <li>Being consistent despite of the feel of stagnation</li>
+                        <li>Unilateral training</li>
+                        <li>Isometric exercises</li>
+                        <li>Exercises with weights</li>
+                    </ul>
                 </div>
             </div>
         </main>
+        <script>includeHTML()</script>
     </body>
 </html>
