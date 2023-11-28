@@ -4,6 +4,16 @@ h1 {
     color: brown;
 }
 
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+p {
+    font-size: 25px;
+    text-indent: 45px;
+}
 .add-exercise-panel {
     position: fixed;
     bottom: 0;
@@ -27,3 +37,4 @@ h1 {
 .title-and-submit-button label {
     font-size: 120%;
 }
+
