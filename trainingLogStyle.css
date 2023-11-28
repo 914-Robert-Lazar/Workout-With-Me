@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: brown;
+}
+
+.add-exercise-panel {
+    position: fixed;
+    bottom: 0;
+    font-size: 140%;
+    background-color:rgb(245, 121, 20);
+    box-sizing: border-box;
+    width: 80%;
+    padding: 0.5%;
+}
+
+.add-exercise-panel form input, select {
+    font-size: 80%;
+}
+
+.title-and-submit-button {
+    display: grid;
+    grid-template-columns: auto 15%;
+    margin-bottom: 1%;
+}
+
+.title-and-submit-button label {
+    font-size: 120%;
+}

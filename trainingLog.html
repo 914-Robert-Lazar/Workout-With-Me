@@ -5,6 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="navStyle.css">
+        <link rel="stylesheet" href="trainingLogStyle.css">
         <script src="navigation-loader.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Workout with me</title>
@@ -12,7 +13,31 @@
     <body>
         <div include-html="nav.html"></div>
         <main>
-            <h2>Work in progress</h2>
+            <h1>Training Log</h1>
+            <div class="add-exercise-panel">
+                <form>
+                    <div class="title-and-submit-button">
+                        <label for="add-exercise">Add a new exercise</label>
+                        <input type="submit" id="add-exercise" name="add-exercise" value="Add Exercise">
+                    </div>
+                    <label for="exercise-name">Name Of Exercise</label>
+                    <input type="text" id="exercise-name" name="exercise-name">
+                    <label for="exercise-type">Type</label>
+                    <select id="exercise-type" name="exercise-type">
+                        <option value="push">Push</option>
+                        <option value="pull">Pull</option>
+                        <option value="leg">Leg</option>
+                    </select>
+                    <label for="exercise-orientation">Orientation</label>
+                    <select id="exercise-orientation" name="exercise-orientation">
+                        <option value="horizontal">Horizontal</option>
+                        <option value="vertical">Vertical</option>
+                    </select>
+                    <label for="exercise-equipment">Used Equipment</label>
+                    <input type="text" id="exercise-equipment" name="exercise-equipment"><br>
+                </form>
+
+            </div>
         </main>
         <script>includeHTML()</script>
     </body>
