@@ -1,0 +1,10 @@
+USE Training_Log
+GO
+
+CREATE TABLE Exercise
+(ExerciseID INT PRIMARY KEY IDENTITY(1,1),
+Name VARCHAR(40),
+Type VARCHAR(10),
+Orientation VARCHAR(15),
+Equipment VARCHAR(40))
+GO
