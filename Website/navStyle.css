@@ -40,7 +40,7 @@ nav {
     display: none;
     transform: translate(104.5%, -10.5%);
 }
-
+    
 .tutorial:hover .tutorial-sub-menu {
     display: block;
     float: right;
